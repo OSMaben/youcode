@@ -8,10 +8,19 @@ int main(void)
     int b;
     char op;
 
-    printf("\t CAL \t \n");
+    printf("");
+    printf("\t give the two numbers \t \n");
 
     scanf("%d %c %d", &a , &op, &b);
 
-    if (op == '\'')
-        printf();
+    if (op == '/')
+        printf(" the result of a / b is = %d\n", a / b);
+    else if (op == '+')
+        printf("the result of a + b is = %d\n", a + b);
+    else if (op == '-')
+        printf("the result of a - b is = %d\n", a - b);
+    else if (op == '%')
+        printf("the result of a % b is %d\n", a % b);
+    else
+        printf("=======Something Not Working As Expected==========  \n");
 }
